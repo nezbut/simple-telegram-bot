@@ -15,3 +15,5 @@ a: str
 
 a = 'w'
 b = a.capitalize()
+
+print('test', b)

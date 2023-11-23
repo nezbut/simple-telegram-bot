@@ -7,3 +7,5 @@ a = 2
 def main(a=False):
 
     print('gagaga', a)
+
+print(a and 2)

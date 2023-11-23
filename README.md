@@ -1,6 +1,1 @@
 # wawatest гей
-
-fffffff
-
-
-#АХУЕТЬ

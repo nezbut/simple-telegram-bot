@@ -15,5 +15,3 @@ a: str
 
 a = 'w'
 b = a.capitalize()
-
-print(b)

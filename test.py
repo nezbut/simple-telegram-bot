@@ -1,12 +1,9 @@
 print('test file')
 
-print(2)
+def main():
 
-a = 2
+    print('test git main')
 
-def main(a=False):
 
-    print('gagaga', a)
-    return 'lox'
-
-print(main(a=None))
+if __name__ == '__main__':
+    main()

@@ -7,5 +7,13 @@ a = 2
 def main(a=False):
 
     print('gagaga', a)
+    return 'lox'
 
-print(a and 2)
+print(main(a=None))
+
+a: str
+
+a = 'w'
+b = a.capitalize()
+
+print(b)

@@ -10,10 +10,3 @@ def main(a=False):
     return 'lox'
 
 print(main(a=None))
-
-a: str
-
-a = 'w'
-b = a.capitalize()
-
-print('test', b)

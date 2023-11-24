@@ -1,17 +1,22 @@
-print('test file')
+import asyncio
 
-def main():
+async def test1():
+    print('opa 1')
+    await asyncio.sleep(2)
+    print('opa 2')
 
-    print('test git __main__')
+async def test2():
+    print('aaaaa')
+    print('aaaaa')
+    print('aaaaa')
+    print('aaaaa')
+
+
+async def main():
+    tasks = [test1(), test2()]
+
+    await asyncio.gather(*tasks)
 
 
 if __name__ == '__main__':
-    main()
-    print()
-    w = 323232
-    print(w + 2)
-    print(w)
-    print(w)
-    print(w)
-    print(w)
-    print(w)
+    asyncio.run(main())

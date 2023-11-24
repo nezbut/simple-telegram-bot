@@ -10,3 +10,8 @@ if __name__ == '__main__':
     print()
     w = 323232
     print(w + 2)
+    print(w)
+    print(w)
+    print(w)
+    print(w)
+    print(w)

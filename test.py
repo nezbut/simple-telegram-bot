@@ -9,4 +9,4 @@ if __name__ == '__main__':
     main()
     print()
     w = 323232
-    print(w * 2)
+    print(w + 2)

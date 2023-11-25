@@ -7,6 +7,7 @@ from dataclasses import dataclass
 
 load_dotenv()
 
+# Class Message
 class UserMessage:
 
     @dataclass
@@ -48,7 +49,7 @@ class UserMessage:
     def __repr__(self) -> str:
         return f"{self.from_user.Username}Message({self.text})"
 
-
+# Main Class Bot
 class TelegramBot:
 
     def __init__(self, token: str) -> None:

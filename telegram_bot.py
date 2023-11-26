@@ -81,6 +81,7 @@ class TelegramBot:
         self.API_BOT_URL = f"https://api.telegram.org/bot{self.__token}"
         self._offset = -2
         self.__cancel = False
+        self.__timeout = 50
         self.save_messages_users: dict[str, list[UserMessage]] = {}
         self.commands_handler: dict[str, function] = {}
         self.commands_aliases: dict[str, tuple[str]] = {}
@@ -133,7 +134,7 @@ class TelegramBot:
                 if self.__cancel:
                     return
 
-                async with session.get(f'{self.API_BOT_URL}/getUpdates?offset={self._offset + 1}') as response:
+                async with session.get(f'{self.API_BOT_URL}/getUpdates?offset={self._offset + 1}&timeout={self.__timeout}') as response:
                     data = await response.json()
 
                     if data.get('result'):

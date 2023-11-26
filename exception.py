@@ -11,7 +11,7 @@ class CommandIsNotCoroutine(Exception):
 class MinimumOneArgument(Exception):
 
     def __str__(self) -> str:
-        return "Минимум должен быть один аргумент для передачи экземпляра класса UserMessage."
+        return "Минимум должен быть один аргумент для передачи экземпляра класса BotCommand."
 
 __all__ = (
     'CommandExists',

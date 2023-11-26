@@ -1,3 +1,3 @@
 # My Telegram Bot
 
-Simple bot for Telegram
+A simple Telegram bot for learning the Telegram API

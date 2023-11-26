@@ -83,7 +83,7 @@ class TelegramBot:
         self.__cancel = False
         self.save_messages_users: dict[str, list[UserMessage]] = {}
         self.commands_handler: dict[str, function] = {}
-        self.commands_aliases: dict[str, tuple[str] | list[str]] = {}
+        self.commands_aliases: dict[str, tuple[str]] = {}
 
     def save_message(self, result: dict):
         if result.get('message'):

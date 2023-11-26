@@ -21,7 +21,7 @@ async def command_random_photo_cats(cmd: BotCommand):
 
 @bot.command(name='randomnum', aliases=('rnum',))
 async def command_random_description_number(cmd: BotCommand):
-    num = str(randint(1, 10_000_000))
+    num = str(randint(1, 1_000_000))
     await cmd.send_message(await request_to_numbers_api(num))
 
 async def main():

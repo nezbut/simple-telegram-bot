@@ -3,7 +3,7 @@ import asyncio
 from dataclasses import dataclass
 import exception
 
-
+# Class Bot Commands
 class BotCommand:
 
     def __init__(self, message, bot, command_name: str) -> None:

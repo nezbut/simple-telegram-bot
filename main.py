@@ -8,7 +8,7 @@ import asyncio
 
 load_dotenv()
 
-bot = TelegramBot(getenv('BOT_TOKEN'))
+bot = TelegramBot(getenv('BOT_TOKEN')) # Here you need your bot token received from @BotFather
 random_photos_animals = RandomPhotoAnimal()
 
 @bot.command(name='hi', aliases=('hello',))
